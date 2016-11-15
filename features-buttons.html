@@ -45,7 +45,9 @@
             </ul>
         </div>
         <!-- Header -->
-        <div id="header" style="background-position: 50% 0%; height:100%;" data-stellar-background-ratio="0.5">
+        <div id="header" style="background-position: 50% 0%; <br />
+<b>Notice</b>:  Undefined variable: full_page in <b>C:\xampp\htdocs\bootstrap\html\php\header.php</b> on line <b>46</b><br />
+" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row">
                     <!-- Logo -->
@@ -62,10 +64,10 @@
                         <div class="text-center visible-lg">
                             <ul id="hornavmenu" class="nav navbar-nav">
                                 <li>
-                                    <a href="index.html" class="fa-home active">Home</a>
+                                    <a href="index.html" class="fa-home ">Home</a>
                                 </li>
                                 <li>
-                                    <span class="fa-gears ">Features</span>
+                                    <span class="fa-gears active">Features</span>
                                     <ul>
                                         <li class="parent">
                                             <span>Typography</span>
@@ -208,214 +210,251 @@
         <!-- End Header -->
         <!-- === END HEADER === -->
         <!-- === BEGIN CONTENT === -->
-        <div id="welcome" class="background-white">
-            <div class="container">
+        <div id="content">
+            <div class="container background-white">
                 <div class="row margin-vert-40">
-                    <!-- Main Text -->
-                    <div class="col-md-12">
-                        <h2 class="text-center article-title">Welcome to Boss</h2>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                            nisl ut aliquip ex ea commodo consequat.</p>
-                        <img class="fadeInUp animate" alt="" src="assets/img/responsive_homepage.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 40px;">
+                    <!-- Begin Sidebar Menu -->
+                    <div class="col-md-3">
+                        <ul class="list-group sidebar-nav" id="sidebar-nav">
+                            <!-- Typography -->
+                            <li class="list-group-item list-toggle">
+                                <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-typography">Typography</a>
+                                <ul id="collapse-typography" class="collapse">
+                                    <li>
+                                        <a href="features-typo-basic.html">
+                                            <i class="fa fa-sort-alpha-asc"></i>Basic Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-typo-blockquotes.html">
+                                            <i class="fa fa-magic"></i>Blockquotes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End Typography -->
+                            <!-- Components -->
+                            <li class="list-group-item list-toggle">
+                                <a class="accordion-toggle" href="#collapse-components" data-toggle="collapse">Components</a>
+                                <ul id="collapse-components" class="collapse">
+                                    <li>
+                                        <span class="badge">New</span>
+                                        <a href="features-labels.html">
+                                            <i class="fa fa-tags"></i>Labels</a>
+                                    </li>
+                                    <li>
+                                        <span class="badge">New</span>
+                                        <a href="features-progress-bars.html">
+                                            <i class="fa fa-align-left"></i>Progress Bars</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-panels.html">
+                                            <i class="fa fa-columns"></i>Panels</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-pagination.html">
+                                            <i class="fa fa-arrows-h"></i>Pagination</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End Components -->
+                            <!-- Icons -->
+                            <li class="list-group-item list-toggle">
+                                <a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapse-icons">Icons</a>
+                                <ul id="collapse-icons" class="collapse">
+                                    <li>
+                                        <span class="badge badge-u">New</span>
+                                        <a href="features-icons.html">
+                                            <i class="fa fa-chevron-circle-right"></i>Icon Styling</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-icons-font-awesome.html">
+                                            <i class="fa fa-chevron-circle-right"></i>Font Awesome Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-icons-social.html">
+                                            <i class="fa fa-chevron-circle-right"></i>Social Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-icons-glyphicons.html">
+                                            <i class="fa fa-chevron-circle-right"></i>Glyphicons</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End Icons -->
+                            <!-- Testimonials -->
+                            <li class="list-group-item">
+                                <a href="features-testimonials.html">Testimonials</a>
+                            </li>
+                            <!-- End Testimonials -->
+                            <!-- Accordion and Tabs -->
+                            <li class="list-group-item">
+                                <a href="features-accordions-tabs.html">Accordions & Tabs</a>
+                            </li>
+                            <!-- End Accordion and Tabs -->
+                            <!-- Buttons -->
+                            <li class="list-group-item">
+                                <a href="features-buttons.html">Buttons</a>
+                            </li>
+                            <!-- End Buttons -->
+                            <!-- Carousels -->
+                            <li class="list-group-item">
+                                <a href="features-carousels.html">Carousels</a>
+                            </li>
+                            <!-- End Accordion and Tabs -->
+                            <!-- Animate On Scroll -->
+                            <li class="list-group-item">
+                                <a href="features-animate-on-scroll.html">Animate On Scroll</a>
+                            </li>
+                            <!-- End Animate On Scroll -->
+                            <!-- Grid System -->
+                            <li class="list-group-item">
+                                <a href="features-grid.html">Grid System</a>
+                            </li>
+                            <!-- End Grid System -->
+                        </ul>
                     </div>
-                    <!-- End Main Text -->
-                </div>
-            </div>
-        </div>
-        <!-- Icons -->
-        <div id="icons" class="parallax-bg1 text-light background-primary" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row margin-vert-40">
-                    <!-- Icons -->
-                    <div class="col-md-4 text-center animate fadeInLeft">
-                        <i class="fa-crosshairs fa-3x color-primary-lighter"></i>
-                        <h2 class="padding-top-10">Innovate</h2>
-                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</p>
-                    </div>
-                    <div class="col-md-4 text-center animate fadeIn">
-                        <i class="fa-puzzle-piece fa-3x color-primary-lighter"></i>
-                        <h2 class="padding-top-10">Enlighten</h2>
-                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</p>
-                    </div>
-                    <div class="col-md-4 text-center animate fadeInRight">
-                        <i class="fa-music fa-3x color-primary-lighter"></i>
-                        <h2 class="padding-top-10">Inspire</h2>
-                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</p>
-                    </div>
-                    <!-- End Icons -->
-                </div>
-            </div>
-        </div>
-        <!-- End Icons -->
-        <!-- Content -->
-        <div id="content" class="background-white">
-            <div class="container">
-                <div class="row margin-vert-40">
-                    <div class="col-md-12">
-                        <h2 class="text-center article-title">Lorem ipsum dolor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut
-                            porttitor nisl dapibus eu.</p>
-                        <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor
-                            fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-                        <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt
-                            rhoncus urna eget placerat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Content -->
-        <!-- Portfolio -->
-        <div id="porfolio" class="parallax-bg2" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row margin-top-40">
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInLeft">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Velit esse molestie</div>
-                                    </div>
-                                    <img alt="image1" src="assets/img/frontpage/image1.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInUp">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Quam nunc putamus</div>
-                                    </div>
-                                    <img alt="image2" src="assets/img/frontpage/image2.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInRight">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Placerat facer possim</div>
-                                    </div>
-                                    <img alt="image3" src="assets/img/frontpage/image3.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInLeft">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Nam liber tempor</div>
-                                    </div>
-                                    <img alt="image4" src="assets/img/frontpage/image4.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInUp">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Donec non urna</div>
-                                    </div>
-                                    <img alt="image5" src="assets/img/frontpage/image5.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInRight">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Nullam consectetur</div>
-                                    </div>
-                                    <img alt="image6" src="assets/img/frontpage/image6.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInLeft">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Velit esse molestie</div>
-                                    </div>
-                                    <img alt="image7" src="assets/img/frontpage/image7.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInUp">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Quam nunc putamus</div>
-                                    </div>
-                                    <img alt="image8" src="assets/img/frontpage/image8.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                    <!-- Portfolio Item -->
-                    <div class="portfolio-item col-sm-4 col-xs-6 margin-bottom-40">
-                        <a href="#">
-                            <figure class="animate fadeInRight">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Placerat facer possim</div>
-                                    </div>
-                                    <img alt="image9" src="assets/img/frontpage/image9.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div>
-                    <!-- End Portfolio Item -->
-                </div>
-            </div>
-        </div>
-        <!-- End Portfolio -->
-        <!-- Hiring -->
-        <div id="hiring" class="parallax-bg3 text-light" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 margin-vert-40">
-                        <h2 class="animate fadeIn" style="text-align: center;">We are Hiring!</h2>
+                    <!-- End Sidebar Menu -->
+                    <div class="col-md-9">
+                        <!-- Button Size -->
+                        <h3 class="margin-bottom-20">Button Size</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-xs">Button</button>btn btn-xs</p>
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-sm">Button</button>btn btn-sm</p>
+                                <p>
+                                    <button type="button" class="btn btn-primary">Button</button>btn</p>
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-lg">Button</button>btn btn-lg</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>Set the size of your buttons using the default Bootstrap classes <code>btn-xs</code>, <code>btn-sm</code> and <code>btn-lg</code>.</p>
+                                <pre><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Button&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+                        <!-- End Button Size -->
                         <hr>
-                        <p class="animate fadeIn" style="text-align: center;">Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo.
-                            <br>Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-                        <p class="animate fadeInUp" style="text-align: center;">
-                            <button class="btn btn-lg btn-primary" type="button">View Details</button>
-                        </p>
+                        <!-- Default Bootstrap Buttons -->
+                        <h3 class="margin-bottom-20">Default Bootstrap Buttons</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p>
+                                    <button type="button" class="btn btn-default">Default</button>btn-default</p>
+                                <p>
+                                    <button type="button" class="btn btn-primary">Primary</button>btn-primary</p>
+                                <p>
+                                    <button type="button" class="btn btn-info">Info</button>btn-info</p>
+                                <p>
+                                    <button type="button" class="btn btn-success">Success</button>btn-success</p>
+                                <p>
+                                    <button type="button" class="btn btn-warning">Warning</button>btn-warning</p>
+                                <p>
+                                    <button type="button" class="btn btn-danger">Danger</button>btn-danger</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>All the default button classes you expect to find with Bootstrap are included.</p>
+                                <pre><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Button&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+                        <!-- End Default Bootstrap Buttons -->
+                        <hr>
+                        <!-- Extra Buttons -->
+                        <h3 class="margin-bottom-20">Extra Buttons</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p>
+                                    <button type="button" class="btn btn-green">Green</button>btn-green</p>
+                                <p>
+                                    <button type="button" class="btn btn-bronze">Bronze</button>btn-bronze</p>
+                                <p>
+                                    <button type="button" class="btn btn-red">Red</button>btn-red</p>
+                                <p>
+                                    <button type="button" class="btn btn-violet">Violet</button>btn-violet</p>
+                                <p>
+                                    <button type="button" class="btn btn-blue">Blue</button>btn-blue</p>
+                                <p>
+                                    <button type="button" class="btn btn-aqua">Aqua</button>btn-aqua</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>As well as all the default Bootstrap button colors we have added a collection of our own which you can integrate in to your next project.</p>
+                                <pre><code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-green&quot;&gt;Green&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-bronze&quot;&gt;Bronze&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-red&quot;&gt;Red&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-violet&quot;&gt;Violet&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-blue&quot;&gt;Blue&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aqua&quot;&gt;Aqua&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+                        <!-- End Extra Buttons -->
+                        <hr>
+                        <!-- Button Icons -->
+                        <h3 class="margin-bottom-20">Button Icons</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-picture-o"></i>Icon Button
+                                    </button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-database"></i>Icon Button
+                                    </button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-bar-chart-o"></i>Icon Button
+                                    </button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-lg btn-primary" type="button">
+                                        <i class="fa fa-cogs"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-coffee"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary" type="button">
+                                        <i class="fa fa-camera"></i>
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>With the integration of Font Awesome with your template you can add any icon from a collection of over 400 icons to your buttons.</p>
+                                <pre><code class="html">&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+	&lt;i class=&quot;fa fa-picture-o&quot;&gt;&lt;/i&gt; Icon Button
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+	&lt;i class=&quot;fa fa-database&quot;&gt;&lt;/i&gt; Icon Button
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+	&lt;i class=&quot;fa fa-bar-chart-o&quot;&gt;&lt;/i&gt; Icon Button
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-lg btn-primary&quot; type=&quot;button&quot;&gt;
+	&lt;i class=&quot;fa fa-cogs&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+	&lt;i class=&quot;fa fa-coffee&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-sm btn-primary&quot; type=&quot;button&quot;&gt;
+	&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+                            </div>
+                        </div>
+                        <!-- End Buttons Icons -->
+                        <hr>
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
-        <!-- End Hiring -->
         <!-- === END CONTENT === -->
         <!-- === BEGIN FOOTER === -->
         <div id="base" class="background-dark text-light">
@@ -526,4 +565,4 @@
             <!-- End JS -->
     </body>
 </html>
-<!-- === END FOOTER === -->
+<!-- === END FOOTER === -->?>
